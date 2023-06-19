@@ -10,6 +10,7 @@ function Header() {
   };
   return (
     <Menu
+    style={{backgroundColor:"rgb(35, 35, 35)", color:"rgb(223, 223, 223)"}}
       onClick={onMenuClick}
       mode="horizontal"
       items={[

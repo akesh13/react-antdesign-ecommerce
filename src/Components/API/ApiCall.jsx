@@ -9,3 +9,14 @@ export const ApiCall = async () => {
     throw err;
   }
 };
+
+export const getProductByCategory = async (category) => {
+  try {
+    const response = await axios.get(
+      `https://dummyjson.com/products/category/${category}`
+    );
+    return response.data;
+  } catch (err) {
+    throw err;
+  }
+};

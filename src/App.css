@@ -1,26 +1,25 @@
-.App{
+.App {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
-.appHeader{
+.appHeader {
   height: 60px;
 }
 
-.appFooter{
+.appFooter {
   height: 60px;
-background-color: black;
+  background-color: black;
 }
-.pageContent{
+.pageContent {
   display: flex;
   flex: 1;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 .card_image {
   height: 150px !important;
   object-fit: scale-down;
 }
-.card{
-padding: 10px;
-}
+
+
