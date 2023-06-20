@@ -10,9 +10,10 @@ function Header() {
   };
   return (
     <Menu
-    style={{backgroundColor:"rgb(35, 35, 35)", color:"rgb(223, 223, 223)"}}
+    style={{padding:"20px"}}
       onClick={onMenuClick}
       mode="horizontal"
+      theme="dark"
       items={[
         {
           label: <HomeFilled />,

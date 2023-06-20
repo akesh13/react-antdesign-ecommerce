@@ -24,8 +24,9 @@ const Home = () => {
               style={{
                 marginLeft: "100px",
                 fontWeight: "bolder",
-                fontSize: "90px",
-                marginTop: "-1px",
+                fontSize: "80px",
+                marginTop: "40px",
+                fontFamily:"agraham", 
               }}
               level={3}
             >
@@ -43,6 +44,7 @@ const Home = () => {
                 marginLeft: "100px",
                 justifyContent: "center",
                 alignItems: "center",
+                fontFamily:"bernardo", 
               }}
             >
               <span

@@ -1,3 +1,4 @@
+
 .App {
   display: flex;
   flex-direction: column;
@@ -18,8 +19,11 @@
   /* overflow-y: auto; */
 }
 .card_image {
-  height: 150px !important;
+  height: 300px !important;
+  width: auto;
   object-fit: scale-down;
+
+  
 }
 
 

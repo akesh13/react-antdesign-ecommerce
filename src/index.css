@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@font-face {
+  font-family: "bernardo";
+  src: url("./Components/Assets/fonts/bernardo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: vanity-bold;
+  src: url("./Components/Assets/fonts/vanity.bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: vanity-light;
+  src: url("./Components/Assets/fonts/vanity.light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: agraham;
+  src: url("./Components/Assets/fonts/agraham.personal-use.otf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: al-neverada;
+  src: url("./Components/Assets/fonts/al-nevrada-personal-use-only..ttf")
+    format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,5 +37,9 @@ body {
 }
 
 code {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", bernardo;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
