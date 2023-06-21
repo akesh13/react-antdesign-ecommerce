@@ -1,7 +1,8 @@
 import React from "react";
-import { Menu } from "antd";
-import { HomeFilled } from "@ant-design/icons";
+import { Col, Menu, Row } from "antd";
+import { HomeFilled, ShoppingCartOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
+
 
 function Header() {
   const navigate = useNavigate();
@@ -9,8 +10,9 @@ function Header() {
     navigate(`/${item.key}`);
   };
   return (
+    <div>
     <Menu
-    style={{padding:"20px"}}
+    style={{padding:"20px" }}
       onClick={onMenuClick}
       mode="horizontal"
       theme="dark"
@@ -70,7 +72,14 @@ function Header() {
           ],
         },
       ]}
-    ></Menu>
+    >
+      </Menu>
+      <ShoppingCartOutlined style={{fontSize:""}} />
+      
+
+    
+   
+    </div>
   );
 }
 

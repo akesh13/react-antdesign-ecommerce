@@ -39,15 +39,27 @@ const Products = () => {
           return (
             <Badge.Ribbon text={product.discountPercentage}>
               <Card
-                style={{ margin: "20px", backgroundColor:"#734fb2",color:"white" }}
+                bordered={false}
+                style={{
+                  margin: "20px",
+                  backgroundColor: "#734fb2",
+                  color: "white",
+                }}
                 title={product.title}
                 key={index}
-                cover={<Image.PreviewGroup > <Image className="card_image" src={product.thumbnail} /> </Image.PreviewGroup>}
-              
+                cover={
+                  <Image.PreviewGroup>
+                    {" "}
+                    <Image
+                      className="card_image"
+                      src={product.thumbnail}
+                    />{" "}
+                  </Image.PreviewGroup>
+                }
               >
-                <Card.Meta  
+                <Card.Meta
                   title={
-                    <Typography.Paragraph style={{color:"white"}}>
+                    <Typography.Paragraph style={{ color: "white" }}>
                       INR {product.price} /-{" "}
                       <Typography.Text delete type="danger">
                         {parseFloat(
@@ -58,7 +70,8 @@ const Products = () => {
                     </Typography.Paragraph>
                   }
                   description={
-                    <Typography.Paragraph style={{color:"white"}}
+                    <Typography.Paragraph
+                      style={{ color: "white" }}
                       ellipsis={{ rows: 2, expandable: true, symbol: "more" }}
                     >
                       {product.description}
